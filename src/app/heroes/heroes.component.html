@@ -1,2 +1,6 @@
-<h1>{{ hero }}</h1>
-<button onclick="{getButton()}">Choose your Hero</button>
+<div>
+  <h2>{{ heroes.name | uppercase }} Details</h2>
+  <label for="name">Hero Name: </label>
+  <input id="name" [(ngModel)]="heroes.name" placeholder="name" />
+</div>
+<!-- <button onClick={{hero.button()}}></button> -->
